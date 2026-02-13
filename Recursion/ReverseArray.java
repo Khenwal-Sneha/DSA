@@ -1,3 +1,4 @@
+package DSA.Recursion;
 public class ReverseArray {
     public static void reverseArray(int arr[]) {
         // code here
