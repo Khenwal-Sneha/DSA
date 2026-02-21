@@ -1,0 +1,26 @@
+class Solution {
+    int[][] dp;
+    int stockBuySell(int arr[]) {
+        dp=new int[arr.length][2];
+        for(int[] s:dp) Arrays.fill(s,-1);
+        return f(0,0,arr);
+    }
+    
+    int f(int i,int have,int[] arr){
+        if(i>=arr.length) return 0;
+        
+        if(dp[i][have]!=-1) return dp[i][have];
+        
+        int max=0;
+        
+        if(have==0){
+            max=Math.max(max,-arr[i]+f(i+1,1,arr));
+            max=Math.max(max,f(i+1,0,arr));
+        }else{
+            max=Math.max(max,arr[i]+f(i+1,0,arr));
+            max=Math.max(max,f(i+1,1,arr));
+        }
+        
+        return dp[i][have]=max;
+    }
+}
