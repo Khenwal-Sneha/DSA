@@ -1,5 +1,7 @@
 // User function Template for Java
 
+import java.util.Arrays;
+
 class Solution {
     static int knapSack(int val[], int wt[], int capacity) {
         int[][] dp=new int[val.length][capacity+1];

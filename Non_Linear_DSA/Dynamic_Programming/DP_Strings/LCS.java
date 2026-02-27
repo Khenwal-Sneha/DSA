@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 class Solution {
     static int[][] dp;
     static int lcs(String s1, String s2) {

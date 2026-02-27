@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 class Solution {
     int[][] dp;
     public int subseqCount(String txt, String pat) {
