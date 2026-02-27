@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 class Solution {
     static int lis(int arr[]) {
        List<Integer> li=new ArrayList<>();

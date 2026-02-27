@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 class Solution {
     static int lis(int arr[]) {
         int max=1;

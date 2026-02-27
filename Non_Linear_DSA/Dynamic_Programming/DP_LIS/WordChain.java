@@ -1,3 +1,6 @@
+import java.util.Arrays;
+import java.util.HashMap;
+
 class Solution {
     public int longestStringChain(String[] words) {
         Arrays.sort(words, (a, b) -> a.length() - b.length());
